@@ -1,0 +1,66 @@
+@media screen and (min-width: 667px) {
+  .mid-mobile-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 666px) {
+  /* Navigation */
+  .left-menu {
+    width: 70%;
+  }
+  .mid-menu {
+    display: none;
+  }
+  .mid-mobile-menu {
+    display: inline-block;
+    margin: 0 auto;
+    ul {
+      li {
+        list-style-type: none;
+        float: left;
+        margin: 10px 10px 0 0;
+        a {
+          font-size: 12px;
+          color: $light-gray;
+        }
+        &.active a {
+          color: $purple;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .right-menu {
+    width: 30%;
+    text-align: right;
+  }
+  /* Surveys */
+  section.my-surveys .the-survey .user-info h2,
+   section.my-surveys .the-survey .report h2{
+    line-height: .8;
+    margin-top: 5px;
+    height: 35px;
+  }
+  section.my-surveys p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  section.my-surveys .the-survey {
+    height: 200px;
+  }
+  section.my-surveys .survey-status {
+    height: 100px;
+  }
+  section.my-surveys .survey-status .survey-access-rights {
+    width: 70%;
+  }
+  section.my-surveys .survey-status .survey-btn {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section.my-surveys .survey-status {
+    height: 150px;
+  }
+}

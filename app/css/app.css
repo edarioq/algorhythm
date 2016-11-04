@@ -1,0 +1,205 @@
+/* General styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: proxima-nova-condensed, sans-serif;
+  font-style: normal;
+  font-weight: 100; }
+
+p, span {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #2C2E33; }
+
+p.alert {
+  color: #e97f1b; }
+
+a {
+  color: #A3ADD5; }
+
+/* Navigation */
+nav {
+  display: flex;
+  font-family: proxima-nova-condensed, sans-serif;
+  height: 50px;
+  border-bottom: 5px solid #A3ADD5; }
+
+.left-menu {
+  width: auto; }
+  .left-menu span.brand {
+    font-family: proxima-nova-condensed, sans-serif;
+    display: inline-block;
+    font-size: 36px;
+    color: #A3ADD5;
+    margin: 0 0 0 10px; }
+    .left-menu span.brand a {
+      color: #A3ADD5; }
+  .left-menu span.tagline {
+    font-family: proxima-nova-condensed, sans-serif;
+    display: inline-block;
+    color: #747685;
+    vertical-align: middle;
+    margin: 0 0 17px 12px; }
+
+.mid-menu {
+  display: inline-block;
+  margin: 0 auto; }
+  .mid-menu ul li {
+    list-style-type: none;
+    float: left;
+    margin: 10px 35px 0 0; }
+    .mid-menu ul li a {
+      color: #BBBDC4; }
+    .mid-menu ul li.active a {
+      color: #A3ADD5;
+      font-weight: 600; }
+
+.right-menu {
+  margin-top: 10px; }
+  .right-menu a {
+    color: #BBBDC4;
+    margin-right: 10px; }
+  .right-menu i.fa {
+    margin-right: 10px;
+    cursor: pointer; }
+
+i.fa-bars {
+  color: #bbbdc4; }
+
+/* Surveys */
+section.my-surveys {
+  margin: 50px 0;
+  width: auto; }
+  section.my-surveys .survey-container {
+    margin-bottom: 50px; }
+  section.my-surveys .the-survey {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #F3F3F4;
+    height: 125px; }
+    section.my-surveys .the-survey .user-info {
+      padding: 20px;
+      width: 50%; }
+    section.my-surveys .the-survey .report {
+      padding: 20px;
+      text-align: right;
+      width: 50%; }
+    section.my-surveys .the-survey .user-info h2,
+    section.my-surveys .the-survey .report h2 {
+      line-height: .6;
+      margin-top: 20px; }
+  section.my-surveys .survey-status {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #E8E9EB;
+    height: 50px;
+    width: 100%; }
+    section.my-surveys .survey-status .survey-access-rights {
+      padding: 15px 20px;
+      width: 80%; }
+      section.my-surveys .survey-status .survey-access-rights p {
+        font-family: proxima-nova-condensed, sans-serif;
+        font-size: 16px;
+        color: #393a3f; }
+      section.my-surveys .survey-status .survey-access-rights ul {
+        margin-left: 0; }
+        section.my-surveys .survey-status .survey-access-rights ul li {
+          list-style-type: none;
+          float: left;
+          font-family: proxima-nova-condensed, sans-serif;
+          font-size: 16px;
+          color: #393a3f;
+          margin-right: 25px; }
+    section.my-surveys .survey-status .survey-btn {
+      text-align: right;
+      width: 20%; }
+      section.my-surveys .survey-status .survey-btn button {
+        font-weight: 900;
+        height: 100%;
+        width: 100%;
+        border-radius: 3px; }
+      section.my-surveys .survey-status .survey-btn button.completed {
+        background-color: #71D206; }
+      section.my-surveys .survey-status .survey-btn button.warning {
+        color: black;
+        background-color: #ffffff;
+        border: 3px solid #dde933; }
+      section.my-surveys .survey-status .survey-btn button.danger {
+        color: black;
+        background-color: #ffffff;
+        border: 3px solid #e97f1b; }
+      section.my-surveys .survey-status .survey-btn button.remind {
+        color: black;
+        background-color: #ffffff;
+        border: 3px solid #6e7ebd; }
+  section.my-surveys .survey-completed-border {
+    border-left: 8px solid #71D206; }
+  section.my-surveys .survey-warning-border {
+    border-left: 8px solid #dde933; }
+  section.my-surveys .survey-danger-border {
+    border-left: 8px solid #e97f1b; }
+  section.my-surveys .survey-remind-border {
+    border-left: 8px solid #bbbdc4; }
+  section.my-surveys i.fa {
+    vertical-align: top;
+    font-size: 13px;
+    margin-top: 5px; }
+  section.my-surveys a i.fa {
+    color: #bbbdc4; }
+  section.my-surveys i.fa-flag {
+    color: #6e7ebd; }
+  section.my-surveys i.fa-check-circle {
+    color: #71D206; }
+  section.my-surveys i.fa-times-circle {
+    color: #e97f1b; }
+  section.my-surveys i.gray-icon {
+    color: #bbbdc4; }
+  section.my-surveys i.fa-minus-circle {
+    color: #bbbdc4; }
+
+@media screen and (min-width: 667px) {
+  .mid-mobile-menu {
+    display: none; } }
+
+@media screen and (max-width: 666px) {
+  /* Navigation */
+  .left-menu {
+    width: 70%; }
+  .mid-menu {
+    display: none; }
+  .mid-mobile-menu {
+    display: inline-block;
+    margin: 0 auto; }
+    .mid-mobile-menu ul li {
+      list-style-type: none;
+      float: left;
+      margin: 10px 10px 0 0; }
+      .mid-mobile-menu ul li a {
+        font-size: 12px;
+        color: #BBBDC4; }
+      .mid-mobile-menu ul li.active a {
+        color: #A3ADD5;
+        font-weight: 600; }
+  .right-menu {
+    width: 30%;
+    text-align: right; }
+  /* Surveys */
+  section.my-surveys .the-survey .user-info h2,
+  section.my-surveys .the-survey .report h2 {
+    line-height: .8;
+    margin-top: 5px;
+    height: 35px; }
+  section.my-surveys p {
+    font-size: 14px;
+    margin-top: 20px; }
+  section.my-surveys .the-survey {
+    height: 200px; }
+  section.my-surveys .survey-status {
+    height: 100px; }
+  section.my-surveys .survey-status .survey-access-rights {
+    width: 70%; }
+  section.my-surveys .survey-status .survey-btn {
+    width: 30%; } }
+
+@media screen and (max-width: 400px) {
+  section.my-surveys .survey-status {
+    height: 150px; } }

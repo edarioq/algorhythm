@@ -1,0 +1,226 @@
+@import 'variables';
+
+/* General styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 100;
+}
+
+p, span {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  color: #2C2E33;
+}
+
+p.alert {
+  color: #e97f1b;
+}
+
+a {
+  color: $purple;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  font-family: $secondary-font;
+  height: 50px;
+  border-bottom: 5px solid $purple;
+}
+
+.left-menu {
+  width: auto;
+  span.brand {
+    font-family: $secondary-font;
+    display: inline-block;
+    font-size: 36px;
+    color: $purple;
+    margin: 0 0 0 10px;
+    a {
+      color: $purple;
+    }
+  }
+
+  span.tagline {
+    font-family: $secondary-font;
+
+    display: inline-block;
+    color: #747685;
+    vertical-align: middle;
+    margin: 0 0 17px 12px;
+  }
+}
+
+.mid-menu {
+  display: inline-block;
+  margin: 0 auto;
+  ul {
+    li {
+      list-style-type: none;
+      float: left;
+      margin: 10px 35px 0 0;
+      a {
+        color: $light-gray;
+      }
+      &.active a {
+        color: $purple;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.right-menu {
+  margin-top: 10px;
+  a {
+    color: $light-gray;
+    margin-right: 10px;
+  }
+  i.fa {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+i.fa-bars {
+  color: $gray;
+}
+/* Surveys */
+
+section.my-surveys {
+  margin: 50px 0;
+  width: auto;
+
+  .survey-container {
+
+    margin-bottom: 50px;
+  }
+
+  .the-survey {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #F3F3F4;
+    height: 125px;
+
+    .user-info {
+      padding: 20px;
+      width: 50%;
+    }
+    .report {
+      padding: 20px;
+      text-align: right;
+      width: 50%;
+    }
+    .user-info h2,
+    .report h2 {
+      line-height: .6;
+      margin-top: 20px;
+    }
+  }
+
+  .survey-status {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #E8E9EB;
+    height: 50px;
+    width: 100%;
+    .survey-access-rights {
+      padding: 15px 20px;
+      width: 80%;
+      p {
+        font-family: $secondary-font;
+        font-size: 16px;
+        color: #393a3f;
+      }
+      ul {
+        margin-left: 0;
+        li {
+          list-style-type: none;
+          float: left;
+          font-family: $secondary-font;
+          font-size: 16px;
+          color: #393a3f;
+          margin-right: 25px;
+        }
+      }
+    }
+    .survey-btn {
+      text-align: right;
+      width: 20%;
+      button {
+        font-weight: 900;
+        height: 100%;
+        width: 100%;
+        border-radius: 3px;
+      }
+      button.completed {
+        background-color: #71D206;
+      }
+      button.warning {
+        color: black;
+        background-color: #ffffff;
+        border: 3px solid $yellow;
+      }
+      button.danger {
+        color: black;
+        background-color: #ffffff;
+        border: 3px solid $orange;
+      }
+      button.remind {
+        color: black;
+        background-color: #ffffff;
+        border: 3px solid $darker-purple;
+      }
+    }
+  }
+
+  .survey-completed-border {
+    border-left: 8px solid $green;
+  }
+
+  .survey-warning-border {
+    border-left: 8px solid $yellow;
+  }
+
+  .survey-danger-border {
+    border-left: 8px solid $orange;
+  }
+
+  .survey-remind-border {
+    border-left: 8px solid $gray;
+  }
+
+  i.fa {
+    vertical-align: top;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  a i.fa {
+    color: $gray;
+  }
+
+  i.fa-flag {
+    color: $darker-purple;
+  }
+
+  i.fa-check-circle {
+    color: $green;
+  }
+
+  i.fa-times-circle {
+    color: $orange;
+  }
+
+  i.gray-icon{
+    color: $gray;
+  }
+
+  i.fa-minus-circle {
+    color: $gray;
+  }
+}
+
+@import 'mobile.scss'

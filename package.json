@@ -1,0 +1,16 @@
+{
+  "name": "algorhythm.io",
+  "version": "1.0.0",
+  "description": "You will have a span of 24 hours to complete this test from the time of me sending this email. Please follow these steps to code a small static site from one of our prototypes:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
